@@ -122,3 +122,31 @@ other variations
 ui cube shape, ui text shape
 filp up(left, right, over, back, down), set next side
 ```
+######67 sidebars
+```
+.ui.sidebar.vertical.inverted.icon.menu>(.item>i.large.home.icon)*3
+.pusher>button.ui.primary.button{show}
+```
+js
+```
+$('.button').on('click',function(){
+  $('.sidebar').sidebar('toggle');
+});
+```
+general settings
+```
+context exclusive closable dimPage scrollLock returnScroll
+```
+######69 tab
+```
+.ui.top.attached.tabular.menu>.active.item[data-tab='a']+.item[data-tab='b']+.item[data-tab='c']
+.ui.buttom.attached.active.tab.segment[data-tab='a']+.ui.buttom.attached.tab.segment[data-tab='b']+.ui.buttom.attached.tab.segment[data-tab='c']
+```
+js
+```
+$(.tabular.menu .item').tab()
+```
+settings
+```
+auto history ignoreFirstLoad eveluateScripts alwaysRefresh cache apiSettings historType path context
+```
