@@ -80,3 +80,45 @@ massive button
 ui massive red buttons>ui button
 ui massive vertical red buttons>ui button
 ```
+######63 semantic ui modules - progress
+```
+div.ui.progress#standard>.bar>.progress
+```
+```
+$('#standard').progress({
+percent:1
+});
+```
+data indicating
+```
+div.ui.indicating.progress[data-percent=50]>(.bar>.progress)+.label{uploading}
+```
+settings
+```
+autoSuccess showActivity limitValues label random precision total value
+```
+######65 semantic ui modules - Ratings
+```
+.ui.star.rating[data-max-rating=5]
+.ui.heart.rating[data-max-rating=5]
+```
+js
+```
+$('.rating').rating();
+```
+######66 shapes
+```
+.ui.shape>.sides>(.active.side>img.ui.small.image)+(.side>img.ui.small.image)
+```
+js
+```
+$('.shape').shape();
+$('.button').on('click',function(){
+  $('.shape').shape('flip up');
+});
+```
+other variations
+```
+ui cube shape, ui text shape
+filp up(left, right, over, back, down), set next side
+```
